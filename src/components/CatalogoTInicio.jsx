@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   },
   backButton: {
     marginRight: theme.spacing(1),
-    color:'rgb(126 126 126 / 87%)'
   },
   instructions: {
     marginTop: theme.spacing(1),
@@ -29,15 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 link:{
   marginTop:20,
-  color:'#747373',
 },
-steper:{
-  '& .MuiStepLabel-label':{
-    color:'#747373'
-  },
-  backgroundColor:'#fff0',
-  width:'100%'
-}
 }));
 
 function getSteps() {
@@ -105,7 +96,7 @@ const CatalogoTInicio = () => {
             Catálogo Trámites
           </Typography>
     <div className={classes.root}>
-      <Stepper className={classes.steper} activeStep={activeStep} alternativeLabel>
+      <Stepper activeStep={activeStep} alternativeLabel>
         {steps.map((label, index) => (
           <Step style={{width:'100%'}} key={label}>
             <StepLabel style={{width:'100%'}} onClick={handleStep(index)}>{label}</StepLabel>

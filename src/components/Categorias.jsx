@@ -45,50 +45,20 @@ const useStyles = makeStyles((theme) => ({
       width: '80%',
       color: '',
     },
-    // "& .MuiFormFieldset-root": {
-    //   color: "black"
-    // },
   },
   formControl: {
     margin: theme.spacing(1),
     minWidth: '100%',
-    '& .MuiOutlinedInput-notchedOutline': {
-      borderColor: '#bfbfbf',
-    },
-    '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiInputBase-input':{
-      color:'#747373'
-    },
-    // backgroundColor:'#9e9e9e'
-  },
-  input: {
-    // backgroundColor:'#e0e0e0'
   },
   container: {
     maxHeight: 440,
   },
   margin: {
     margin: theme.spacing(1),
-    '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiTablePagination-root': {
-      color: '#747373',
-    },
-    '& .MuiInputBase-root': {
-      color: 'rgb(100 100 100 / 87%)',
-    },
   },
-  // txt:{
-  //   '& .MuiTypography-colorTextSecondary':{
-  //    color:'yellow'
-  //   }
-  // },
+
   link: {
     marginTop: 20,
-    color: '#747373',
   },
   fixColumn: {
     position: 'sticky',
@@ -100,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   head: {
     textAlign: 'center',
     fontWeight: 'bold',
-    backgroundColor: '#bbbaba',
+    // backgroundColor: '#bbbaba',
   },
 }));
 const Categorias = () => {
@@ -338,10 +308,6 @@ const Categorias = () => {
                     variant="outlined"
                     type="number"
                     name="id"
-                    InputProps={{
-                      className: classes.input,
-                      color:'yellow'
-                    }}
                     error={form.errors.id && form.touched.id}
                     value={form.values.id}
                     onChange={form.addValue}
@@ -473,8 +439,8 @@ const Categorias = () => {
                   <Button
                     className={classes.margin}
                     onClick={handleCancel}
-                    color="primary"
-                    variant="outlined"
+                    variant="contained"
+                    color="secondary"
                     size="large"
                     style={{
                       marginTop: '20px',
@@ -673,7 +639,6 @@ const Categorias = () => {
           </TableContainer>
           <TablePagination
             className={classes.margin}
-            style={{ color: '#747373' }}
             rowsPerPageOptions={[5, 10, 25, 100]}
             component="div"
             count={catal.length}

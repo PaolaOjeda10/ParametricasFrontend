@@ -74,7 +74,6 @@ const Login = () => {
         await Api.auth(data)
           .then((resp) => {
             if (resp && resp.finalizado) {
-              // console.log(resp);
               Storage.set('token', resp.datos.access_token);
               const jwtStr = resp.datos.access_token.split('.')[1];
               const actualDate = Math.round(new Date().getTime() / 1000);
@@ -86,7 +85,6 @@ const Login = () => {
               return navigate('/Inicio');
             }
             dispatch(MessageWarning('Error en usuario y contraseña'));
-            // console.log('resp', resp);
           })
           .catch((err) => console.log(err));
       }
@@ -99,7 +97,7 @@ const Login = () => {
       <AppBar
         position="static"
         alignitems="center"
-        style={{ backgroundColor: '#2196f3', display: 'block' }}
+        style={{ backgroundColor: '#3f51b5', height:'99px', display: 'block' }}
       >
         <Toolbar>
           <Grid container wrap="wrap">
@@ -164,7 +162,7 @@ const Login = () => {
                     <Grid item>
                       <Button
                         style={{
-                          backgroundColor: 'rgb(21 128 213)',
+                          backgroundColor: '#3f51b5',
                           color: 'white',
                         }}
                         variant="contained"

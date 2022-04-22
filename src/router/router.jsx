@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Fade } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
@@ -7,13 +7,9 @@ import AppRoutes from './routes';
 import AppNavbar from '../layout/AppNavbar';
 import { setLogin } from '../redux/userReducer';
 import { useLocation, useParams } from 'react-router-dom';
-import DarkModeToggle from 'react-dark-mode-toggle';
-import { DarkThemeContext } from '../DarkThemeContext';
 import '../index.css';
 
 const AppRouter = () => {
-  const { turnOn, setTurnOn, mainColor } = useContext(DarkThemeContext);
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
@@ -50,22 +46,10 @@ const AppRouter = () => {
 
   return (
     <>
-      <div
-        className="App"
-        style={{
-          backgroundColor: mainColor.bg,
-          color:mainColor.color,
-          height: '100%',
-        }}
-      >
-        <AppNavbar />
-        <div style={{float:'right'}}>
-        <DarkModeToggle onChange={setTurnOn} checked={turnOn} size={45} />
-        </div>
-        <Fade>
-          <AppRoutes />
-        </Fade>
-      </div>
+      <AppNavbar />
+      <Fade>
+        <AppRoutes />
+      </Fade>
     </>
   );
 };

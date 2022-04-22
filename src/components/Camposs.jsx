@@ -54,18 +54,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     listStyle: 'none',
     padding: theme.spacing(0.5),
-    '& .MuiOutlinedInput-notchedOutline': {
-      borderColor: '#bfbfbf',
-    },
-    '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiPaper-root': {
-      backgroundColor: '#fff0',
-    },
-    '& .MuiInputBase-input':{
-      color:'#747373'
-    },
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -90,20 +78,11 @@ const useStyles = makeStyles((theme) => ({
   },
   margin: {
     margin: theme.spacing(1),
-     '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiTablePagination-root': {
-      color: '#747373',
-    },
-    '& .MuiInputBase-root': {
-      color: 'rgb(100 100 100 / 87%)',
-    },
   },
   fixColumn: {
     position: 'sticky',
     right: 0,
-    minWidth:'146px',
+    minWidth:'182px',
     backgroundColor:'#a39e9e',
     textAlign:'center',
     fontWeight: 'bold',
@@ -111,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   head:{
     textAlign:'center',
     fontWeight: 'bold',
-    backgroundColor: '#bbbaba',
+    // backgroundColor: '#bbbaba',
   }
 }));
 const Navegacion = () => {
@@ -619,7 +598,6 @@ const Camposs = () => {
   };
   // eslint-disable-next-line
   const [value, setValue] = React.useState([]);
-
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -660,7 +638,6 @@ const Camposs = () => {
     }
   };
   const onChangeEditJsonMaxmin = (v) => {
-    // console.log(v);
     if (!v.error) {
       if(v.jsObject === undefined){
         setMaxmin({})
@@ -1198,8 +1175,8 @@ const Camposs = () => {
 
               <Grid item md={12} xs={12} sm={6} lg={6} xl={6}>
                 <Button
-                  color="primary"
-                  variant="outlined"
+                  variant="contained"
+                  color="secondary"
                   className={classes.margin}
                   disableElevation
                   onClick={handleCancel}
@@ -1472,7 +1449,6 @@ const Camposs = () => {
         component="div"
         count={campos.length}
         rowsPerPage={rowsPerPage}
-        style={{color: '#747373'}}
         page={page}
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}

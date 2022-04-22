@@ -40,18 +40,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: '100%',
     marginTop:4,
-    '& .MuiOutlinedInput-notchedOutline': {
-      borderColor: '#bfbfbf',
-    },
-    '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiPaper-root': {
-      backgroundColor: '#fff0',
-    },
-    '& .MuiInputBase-input':{
-      color:'#747373'
-    },
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -75,15 +63,6 @@ const useStyles = makeStyles((theme) => ({
   },
   margin: {
     margin: theme.spacing(1),
-    '& .MuiFormLabel-root': {
-      color: '#747373',
-    },
-    '& .MuiTablePagination-root': {
-      color: '#747373',
-    },
-    '& .MuiInputBase-root': {
-      color: 'rgb(100 100 100 / 87%)',
-    },
   },
   fixColumn: {
     position: 'sticky',
@@ -96,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   head:{
     textAlign:'center',
     fontWeight: 'bold',
-    backgroundColor: '#bbbaba',
+    // backgroundColor: '#bbbaba',
   }
 }));
 const ParPublicaciones = () => {
@@ -459,8 +438,8 @@ const ParPublicaciones = () => {
               </Grid>
               <Grid item md={6} xs={12} sm={6} lg={6} xl={6}>
                 <Button
-                  color="primary"
-                  variant="outlined"
+                  variant="contained"
+                  color="secondary"
                   className={classes.margin}
                   disableElevation
                   onClick={handleCancel}
@@ -649,7 +628,6 @@ const ParPublicaciones = () => {
         rowsPerPageOptions={[5, 10, 25, 100]}
         component="div"
         count={publicacion.length}
-        style={{color:'#747373'}}
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}

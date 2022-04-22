@@ -69,10 +69,6 @@ const GrupoTabs = (props) => {
     checkbox: {
       flexDirection: 'initial',
     },
-    tab:{
-      backgroundColor:'#ffffff73',
-      color:'#3f51b5'
-    }
   }));
   // fin tabs
   const classes = useStyles();
@@ -84,9 +80,7 @@ const GrupoTabs = (props) => {
   return (
     <div className={classes.root}>
       <Grid container className="grid">
-        <AppBar position="static" style={{color:'rgb(5 17 84)',backgroundColor:'#ffffff73'}} 
-        // className={classes.tab}
-        >
+        <AppBar position="static">
           <Tabs
             value={value}
             onChange={handleChange}

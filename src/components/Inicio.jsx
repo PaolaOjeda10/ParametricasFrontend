@@ -8,7 +8,7 @@ import { DrawContext } from '../Context/drawer/DrawContext';
 const useStyles = makeStyles((theme) => ({
   link: {
     display: 'flex',
-    color:'#747373'
+    // color:'#747373'
   },
   icon: {
     marginRight: theme.spacing(0.5),
@@ -26,7 +26,7 @@ const Inicio = () => {
 
   return (
     <>
-      <div style={{marginTop:'10px',height:'855px',marginRight:'200px', marginLeft: draw?.marginLeft || 200, }}>
+      <div style={{marginTop:'10px',height:'850px',marginRight:'200px', marginLeft: draw?.marginLeft || 200, }}>
       <Breadcrumbs aria-label="breadcrumb" className={classes.link}>
       <Typography>
         <GrainIcon className={classes.icon} />

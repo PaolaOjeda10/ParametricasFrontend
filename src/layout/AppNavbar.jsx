@@ -25,8 +25,6 @@ import { useNavigate } from 'react-router-dom';
 import { setLogin } from '../redux/userReducer';
 import Storage from '../plugins/Storage';
 
-// import { createTheme, ThemeProvider } from "";
-
 const NavIcon = styled(Link)`
   margin-left: 2rem;
   font-size: 2rem;
@@ -112,7 +110,7 @@ const Sidebar = () => {
                         className="nav-links"
                         onClick={click ? handleClick : null}
                       >
-                       Inicio
+                        Inicio
                       </NavLink>
                     </li>
                     <li className="nav-item">
@@ -191,8 +189,11 @@ const Sidebar = () => {
                   </div>
                 </div>
               </nav>
-              <SidebarNav sidebar={sidebar} onClick={click2 ? showSidebar: null} >
-                <SidebarWrap >
+              <SidebarNav
+                sidebar={sidebar}
+                onClick={click2 ? showSidebar : null}
+              >
+                <SidebarWrap>
                   <NavIcon to="#">
                     <AiIcons.AiOutlineClose onClick={showSidebar} />
                   </NavIcon>
