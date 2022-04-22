@@ -1,0 +1,21 @@
+
+/* Fix table head  */
+.tableFixHead    { overflow: auto; height: 500px; }
+.tableFixHead th { position: sticky; top: 0; }
+
+ /* Just common table stuff.  */
+ table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }  
+
+ /* .thead{ 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.table-responsive { 
+    height:200px;
+    overflow:scroll;
+}  */

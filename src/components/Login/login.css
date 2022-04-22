@@ -1,0 +1,237 @@
+.login-form
+{
+justify-content: center;
+min-height: 90vh;
+}
+.button-block{
+width: 100%;
+background-color:#01579b;
+}
+.login-background
+{
+justify-content: center;
+min-height: 30vh;
+padding: 50px;
+}
+.gridC{
+    justify-items: center;
+justify-content: center;
+}
+.Tittle{
+    text-align: center;
+}
+/* .container {
+    display: 'flex';
+    box-sizing: 'borderbox';
+    height: '100%';
+    position: relative;
+    justify-content: 'center';
+    align-items: 'center';
+  }
+  .LogoHeader {
+    width: 8%;
+    height: 8%;
+    margin-left: 103px;
+    margin-top: 14px;
+  }
+  .header {
+    text-align: 'center';
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: darkblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ciudadania {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    width: 25%;
+    border-radius: '0.5rem';
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    align-items: center;
+    justify-content: center;
+  }
+  .CardContent {
+    width: 10px;
+  }
+  .CardAction {
+    display: block;
+    margin-left: 40px;
+    margin-right: -34px;
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .card {
+      width: 25%;
+      height: 30%;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+    .loginBtn2{
+      margin-top: 33px;
+      margin-left: 11px;
+     }
+  }
+  
+  @media screen and (min-width: 1300px)and (max-width: 1400px)  {
+    .card {
+      width: 35%;
+      height: 35rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+    .loginBtn2{
+      margin-top: 33px;
+      margin-left: 11px;
+     }
+  }
+  @media screen and (min-width: 1250px) and (max-width: 1300px) {
+    .card {
+      width: 35%;
+      height: 35rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+    }
+    .loginBtn2{
+      margin-top: 33px;
+      margin-left: 11px;
+     }
+  }
+  @media screen and (max-width: 1250px) {
+    .card {
+      width: 45%;
+      height: 35rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+    }
+    .loginBtn2{
+      margin-top: 33px;
+      margin-left: 11px;
+     }
+  }
+  @media screen and (max-width: 1198px) {
+    .card {
+      width: 45%;
+      height: 35rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+    }
+    .loginBtn2{
+      margin-top: 33px;
+      margin-left: 11px;
+     }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1000px) {
+    .card {
+      width: 50%;
+      height: 33rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+    }
+  }
+  @media screen and (min-width: 729px) and (max-width: 900px) {
+    .card {
+      width: 50%;
+      height: 30rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+    }
+  }
+  @media screen and (min-width: 620px) and (max-width: 726px) {
+    .card {
+      width: 60%;
+      height: 29rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+    }
+    .LogoHeader {
+      width: 14%;
+      height: 9%;
+    }
+  }
+  @media screen and (min-width: 503px) and (max-width: 620px) {
+    .card {
+      width: 75%;
+      height: 26rem;
+      border-radius: '0.5rem';
+      margin: auto;
+      margin-top: 5rem;
+      padding-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 381px) and (max-width: 502px) {
+    .card {
+      width: 95%;
+      height: 29rem;
+      border-radius: '0.5rem';
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+      border-style: none;
+    }
+    .LogoHeader {
+      width: 10%;
+      height: 8%;
+    }
+  }
+  @media screen and (min-width: 309px) and (max-width: 380px) {
+    .card {
+      width: 95%;
+      height: 25rem;
+      border-radius: '0.5rem';
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+      border-style: none;
+    }
+    .LogoHeader {
+      width: 7%;
+      height: 5%;
+      margin-left: 45px;
+    }
+  }
+  @media screen and (min-width: 0px) and (max-width: 308px) {
+    .card {
+      width: 100%;
+      height: 25rem;
+      font-size: 0px;
+      border-radius: '0.5rem';
+      padding-bottom: 1rem;
+      border-style: none;
+    }
+    .LogoHeader {
+      width: 7%;
+      height: 5%;
+      margin-left: 25px;
+    }
+    .loginBtn2{
+     border-radius: 0px;
+    }
+  } */
